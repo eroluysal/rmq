@@ -10,11 +10,17 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "videlalvaro/php-amqplib": "v2.1.0"
+        "videlalvaro/php-amqplib": "v2.1.0",
+        "illuminate/queue": "~5.1@dev"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "5.0-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Illuminate\\Queue\\": "src/"
         }
     },
     "minimum-stability": "dev"
